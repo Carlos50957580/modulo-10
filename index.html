@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Cédula</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <div class="main__contact">
+            <h2 class="main__title">Bienvenido!</h2>
+            <p class="main__paragraph">Vamos a validar si su cédula es correcta!</p>
+            <form class="main__form" onsubmit="event.preventDefault(); valida();">
+                <input type="text" name="cedula" id="cedula" placeholder="Cédula" maxlength="11" class="main__input">
+                <button type="button" class="main__input main__input--send" onclick="valida()">Validar</button>
+                <div class="Color" id="result"></div>
+            </form>
+            <script src="script.js"></script>
+        </div>
+    </section>
+</body>
+</html>
